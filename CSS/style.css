@@ -9,6 +9,10 @@
     background-color: #1d0677;
 }
 
+.border-palegray {
+    border-color: #efeff0;
+}
+
 .font-15 {
     font-size: 15pt;
 }
