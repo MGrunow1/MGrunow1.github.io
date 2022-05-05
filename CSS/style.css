@@ -1,16 +1,16 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mukta&family=Red+Hat+Text:wght@500&display=swap');
 
-.bg-darkblue {
-    background-color: #190a57;
+.bg-charcoal {
+    background-color: #333333;
 }
 
-.bg-mainblue {
-    background-color: #1d0677;
+.bg-gray {
+    background-color: #444444;
 }
 
 .border-palegray {
-    border-color: #efeff0;
+    border-color: #AAAAAA;
 }
 
 .carousel-center {
