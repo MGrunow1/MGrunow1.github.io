@@ -29,9 +29,9 @@
 }
 
 /* don't expand carousel images beyond 1440px width */
-@media screen and (min-width: 1440px) { 
+@media screen and (min-width: 1920px) { 
     .carousel-center {
-        width: 1440px;
+        width: 1920px;
         margin-left: auto;
         margin-right: auto;
     }
