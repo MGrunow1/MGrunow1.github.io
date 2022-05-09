@@ -33,8 +33,21 @@
 .font-15 {
     font-size: 15pt;
 }
+
+.img1 {
+    background-image: url("../img/parallax.jpg");
+}
+
 .mukta {
     font-family: 'Mukta', sans-serif;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: min(50vh, 30vw);
 }
 
 .redhat {
