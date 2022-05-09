@@ -33,6 +33,11 @@
 .font-15 {
     font-size: 15pt;
 }
+
+.img1 {
+    background-image: url("../img/parallax.jpg");
+}
+
 .mukta {
     font-family: 'Mukta', sans-serif;
 }
