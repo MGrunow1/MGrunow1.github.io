@@ -9,8 +9,21 @@
     background-color: #444444;
 }
 
+.btn-offwhite {
+    background-color: #f3f2ed;
+}
+.btn-offwhite:active, .btn-offwhite:hover {
+    background-color: #d4d3cf;
+}
+
+
 .border-palegray {
-    border-color: #AAAAAA;
+    border-color: #aaaaaa;
+}
+
+.btn-border {
+    border-radius: .6rem;
+    border-style: solid;
 }
 
 .carousel-center {
