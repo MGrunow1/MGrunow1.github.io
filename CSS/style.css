@@ -37,6 +37,14 @@
     font-family: 'Mukta', sans-serif;
 }
 
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: min(50vh, 30vw);
+}
+
 .redhat {
     font-family: 'Red Hat Text', sans-serif;
 }
