@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Red+Hat+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto+Slab&display=swap');
 
 .bg-charcoal {
     background-color: #333333;
@@ -12,10 +12,10 @@
 .btn-offwhite {
     background-color: #f3f2ed;
 }
+
 .btn-offwhite:active, .btn-offwhite:hover {
     background-color: #d4d3cf;
 }
-
 
 .border-palegray {
     border-color: #aaaaaa;
@@ -30,16 +30,16 @@
     width: 100%;
 }
 
-.font-15 {
-    font-size: 15pt;
+.fnt-crimson {
+    font-family: 'Crimson Pro', serif;
+}
+
+.fnt-robotoslab {
+    font-family: 'Roboto Slab', serif;
 }
 
 .img1 {
     background-image: url("../img/parallax.jpg");
-}
-
-.mukta {
-    font-family: 'Mukta', sans-serif;
 }
 
 .parallax {
@@ -48,10 +48,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
     height: min(50vh, 30vw);
-}
-
-.redhat {
-    font-family: 'Red Hat Text', sans-serif;
 }
 
 /* don't expand carousel images beyond 1440px width */
