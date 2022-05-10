@@ -30,10 +30,6 @@
     width: 100%;
 }
 
-.width-limit {
-    width: min(30rem, 95%);
-}
-
 .fnt-crimson {
     font-family: 'Crimson Pro', serif;
 }
@@ -46,12 +42,23 @@
     background-image: url("../img/parallax.jpg");
 }
 
+.landing::before {
+    content:"";
+    display: block;
+    margin: -4em;
+    height: 4em;
+}
+
 .parallax {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
     height: min(50vh, 30vw);
+}
+
+.width-limit {
+    width: min(30rem, 95%);
 }
 
 /* don't expand carousel images beyond 1440px width */
