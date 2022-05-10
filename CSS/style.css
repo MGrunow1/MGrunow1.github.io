@@ -30,6 +30,10 @@
     width: 100%;
 }
 
+.width-limit {
+    width: min(30rem, 95%);
+}
+
 .fnt-crimson {
     font-family: 'Crimson Pro', serif;
 }
