@@ -51,11 +51,10 @@
 }
 
 .parallax {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: min(50vh, 30vw);
+    /* display only a dividing line on devices where parallax won't work */
+	height: 0px;
+    border: 1px #aaaaaa;
+    border-bottom-style: solid;
 }
 
 .width-limit {
@@ -68,5 +67,17 @@
         width: 1920px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/* add parallax background if supported */
+@supports (background-attachment: fixed) and (background-size: cover) {
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: min(50vh, 30vw);
+        border: none;
     }
 }
