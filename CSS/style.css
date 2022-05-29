@@ -71,7 +71,7 @@
 }
 
 /* add parallax background if supported */
-@supports (background-attachment: fixed) and (background-size: cover) {
+@media screen and (min-width: 900px) { 
     .parallax {
         background-attachment: fixed;
         background-position: center;
