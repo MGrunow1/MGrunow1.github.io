@@ -1,33 +1,30 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto+Slab&display=swap');
 
-.bg-charcoal {
-    background-color: #333333;
+.bg-darkblue {
+    background-color: #190a57;
 }
 
-.bg-gray {
-    background-color: #444444;
+.border-blue {
+    border-color: #190a57!important;
 }
 
-.btn-offwhite {
-    background-color: #f3f2ed;
+.btn-darkblue {
+    background-color: #190a57;
 }
 
-.btn-offwhite:active, .btn-offwhite:hover {
-    background-color: #d4d3cf;
-}
-
-.border-palegray {
-    border-color: #aaaaaa;
+.btn-darkblue:active, .btn-darkblue:hover {
+    background-color: #3214ae;
 }
 
 .btn-border {
     border-radius: .6rem;
     border-style: solid;
+    border-width: 0.09rem;
 }
 
-.carousel-center {
-    width: 100%;
+.card-border {
+    border-width: 0.1rem!important;
 }
 
 .fnt-crimson {
