@@ -35,23 +35,33 @@
     font-family: 'Roboto Slab', serif;
 }
 
-.img1 {
-    background-image: url("../img/parallax.jpg");
+.img-stone-aqua {
+    background-image: url("../img/stone-aqua.jpg");
+}
+
+.img-stone-blue {
+    background-image: url("../img/stone-blue.jpg");
+}
+
+.img-stone-green {
+    background-image: url("../img/stone-green.jpg");
 }
 
 .landing::before {
     content:"";
     display: block;
     margin-bottom: -4em;
-    margin-top: -4em;
-    height: 4em;
+    margin-top: -6em;
+    height: 6em;
 }
 
 .parallax {
-    /* display only a dividing line on devices where parallax won't work */
-	height: 0px;
-    border: 1px #aaaaaa;
-    border-bottom-style: solid;
+    /* displays as plain image on devuces that don't support fixed background */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    background-repeat: repeat;
+    height: min(7vh, 5rem);
 }
 
 .width-limit {
@@ -67,14 +77,9 @@
     }
 }
 
-/* add parallax background if supported */
-@media screen and (min-width: 900px) { 
+/* increase parallax height on large screens */
+@media screen and (min-width: 750px) { 
     .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: min(50vh, 30vw);
-        border: none;
+        height: min(15vh, 20rem);
     }
 }
