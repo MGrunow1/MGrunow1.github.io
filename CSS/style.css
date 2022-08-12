@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto+Slab&display=swap');
 
 .bg-darkblue {
-    background-color: #190a57;
+    background-color: #002857;
 }
 
 .border-blue {
-    border-color: #190a57!important;
+    border-color: #002857!important;
 }
 
 .btn-darkblue {
-    background-color: #190a57;
+    background-color: #002857;
 }
 
 .btn-darkblue:active, .btn-darkblue:hover {
-    background-color: #3214ae;
+    background-color: #0028ae;
 }
 
 .btn-border {
@@ -55,7 +55,7 @@
 }
 
 .width-limit {
-    width: min(30rem, 95%);
+    width: min(100rem, 95%);
 }
 
 /* don't expand carousel images beyond 1440px width */
