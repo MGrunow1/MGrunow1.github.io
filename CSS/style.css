@@ -1,33 +1,30 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto+Slab&display=swap');
 
-.bg-charcoal {
-    background-color: #333333;
+.bg-darkblue {
+    background-color: #002857;
 }
 
-.bg-gray {
-    background-color: #444444;
+.border-blue {
+    border-color: #002857!important;
 }
 
-.btn-offwhite {
-    background-color: #f3f2ed;
+.btn-darkblue {
+    background-color: #002857;
 }
 
-.btn-offwhite:active, .btn-offwhite:hover {
-    background-color: #d4d3cf;
-}
-
-.border-palegray {
-    border-color: #aaaaaa;
+.btn-darkblue:active, .btn-darkblue:hover {
+    background-color: #0028ae;
 }
 
 .btn-border {
     border-radius: .6rem;
     border-style: solid;
+    border-width: 0.09rem;
 }
 
-.carousel-center {
-    width: 100%;
+.card-border {
+    border-width: 0.1rem!important;
 }
 
 .fnt-crimson {
@@ -38,27 +35,37 @@
     font-family: 'Roboto Slab', serif;
 }
 
-.img1 {
-    background-image: url("../img/parallax.jpg");
+.img-stone-aqua {
+    background-image: url("../img/stone-aqua.jpg");
+}
+
+.img-stone-blue {
+    background-image: url("../img/stone-blue.jpg");
+}
+
+.img-stone-green {
+    background-image: url("../img/stone-green.jpg");
 }
 
 .landing::before {
     content:"";
     display: block;
     margin-bottom: -4em;
-    margin-top: -4em;
-    height: 4em;
+    margin-top: -6em;
+    height: 6em;
 }
 
 .parallax {
-    /* display only a dividing line on devices where parallax won't work */
-	height: 0px;
-    border: 1px #aaaaaa;
-    border-bottom-style: solid;
+    /* displays as plain image on devuces that don't support fixed background */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    background-repeat: repeat;
+    height: min(7vh, 5rem);
 }
 
 .width-limit {
-    width: min(30rem, 95%);
+    width: min(100rem, 95%);
 }
 
 /* don't expand carousel images beyond 1440px width */
@@ -70,14 +77,9 @@
     }
 }
 
-/* add parallax background if supported */
-@media screen and (min-width: 900px) { 
+/* increase parallax height on large screens */
+@media screen and (min-width: 750px) { 
     .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: min(50vh, 30vw);
-        border: none;
+        height: min(15vh, 20rem);
     }
 }
