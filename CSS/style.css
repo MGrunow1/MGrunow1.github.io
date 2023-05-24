@@ -56,7 +56,7 @@
 }
 
 .parallax {
-    /* displays as plain image on devuces that don't support fixed background */
+    /* displays as plain image on devices that don't support fixed background */
     background-attachment: fixed;
     background-position: center;
     background-size: auto;
@@ -66,15 +66,6 @@
 
 .width-limit {
     width: min(100rem, 95%);
-}
-
-/* don't expand carousel images beyond 1440px width */
-@media screen and (min-width: 1920px) { 
-    .carousel-center {
-        width: 1920px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 /* increase parallax height on large screens */
