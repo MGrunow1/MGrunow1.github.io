@@ -1,12 +1,31 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto+Slab&display=swap');
 
+:root {
+    color-scheme: light dark;
+    --back-color: #fff;
+    --fore-color: #000;
+}
+
+body {
+    background-color: var(--back-color);
+    color: var(--fore-color);
+}
+
+.bg-back {
+    background-color: var(--back-color);
+}
+
 .bg-darkblue {
     background-color: #002857;
 }
 
 .border-blue {
     border-color: #002857!important;
+}
+
+.border-fore {
+    border-color: var(--fore-color)!important;
 }
 
 .btn-darkblue {
@@ -72,5 +91,25 @@
 @media screen and (min-width: 750px) { 
     .parallax {
         height: min(15vh, 20rem);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --back-color: #000;
+        --fore-color: #fff;
+    }
+
+    /* dim any bright images, except with prevent-dim */
+    img {
+        filter: brightness(.9);
+    }
+    .prevent-dim {
+        filter: brightness(1);
+    }
+
+    /* lighten border */
+    .border-blue {
+        border-color: #708fb2!important;
     }
 }
